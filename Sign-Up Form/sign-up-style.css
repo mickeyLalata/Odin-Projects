@@ -5,6 +5,10 @@
     rgb(148, 187, 233) 100%);
 
 }
+@font-face {
+    font-family: "external";
+    src: url(fonts/BitcountGridDouble_Cursive-Regular.ttf) format('truetype');
+}
 .container {
     display: flex;
     align-items: flex-start;
@@ -14,7 +18,7 @@ div{
 }
 .signup-title{
     font-size: 45px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "external";
     font-weight: 500px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.2);
@@ -83,6 +87,4 @@ a:hover{
 }
 .login{
     color: blue;
-    margin: auto;
-    margin-left: 30px;
 }
