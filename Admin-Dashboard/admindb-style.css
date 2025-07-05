@@ -1,5 +1,5 @@
 :root {
-    --sidebar-options: 24px;
+    --sidebar-options: 18x;
 }
 html, body {
     height: 100%;
@@ -23,7 +23,7 @@ html, body {
 }
 .dashboard-title {
     display: flex;
-    margin-left: 10%;
+    margin-left: 10px;
     margin-top: 20px;
     gap: 10px;
 }
@@ -41,17 +41,58 @@ html, body {
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(10, 40px);
+    grid-template-areas: 
+    "home"
+    "profile" 
+    "messages" 
+    "history" 
+    "tasks" 
+    "communities" 
+    "." 
+    "settings" 
+    "support" 
+    "privacy";
 }
-.home-img{
-    height: 50px;
-    width: 50px;
+.img {
+    height: 25px;
+    width: 25px;
     margin-top: 10px;
 }
-.home {
+.txt {
+    font-size: var(--sidebar-options);
+    margin-left: 5%;
+}
+.cont-grid {
     display: grid;
     gap: 20px;
     grid-template-columns: 50px 150px;
     margin-left: 10%;
-    font-size: var(--sidebar-options);
+}
+.cont-grid.home { 
+    grid-area: home;
+}
+.cont-grid.profile {
+    grid-area: profile;
+}
+.cont-grid.messages {
+    grid-area: messages;
+}
+.cont-grid.history {
+    grid-area: history;
+}
+.cont-grid.tasks {
+    grid-area: tasks;
+}
+.cont-grid.communities {
+    grid-area: communities;
+}
+.cont-grid.settings {
+    grid-area: settings;
+}
+.cont-grid.support {
+    grid: support;
+}
+.cont-grid.privacy {
+    grid: privacy;
 }
