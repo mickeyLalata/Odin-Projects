@@ -106,16 +106,16 @@ html, body {
 }
 .header {
     display: flex;
-    height: 150px;
+    height: 200px;
     background-color: lightgray;
 }
 .img.search {
     margin: auto;
-    transform: translate(80px, 40px);
+    transform: translate(80px, 28px);
 }
 .searchindicator {
     margin: auto;
-    transform: translate(80px, 31px);
+    transform: translate(80px, 20px);
     width: 40vw;
     height: 3vh;
     border-radius: 8px;
@@ -133,4 +133,30 @@ html, body {
     height: 50px;
     margin: auto;
     transform: translate(300px, 40px);
+}
+.yuuki-txt {
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    transform: translate(250px, -35px);
+}
+.yuuki-welcome {
+    position: relative;
+    border-radius: 360px;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    transform: translate(-775px, 40px);
+}
+.welcome {
+    margin: auto;
+    white-space: nowrap;
+    margin: 0px;
+    transform: translate(-800px, 90px);
+}
+.welcome-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px;
+    transform: translate();
 }
