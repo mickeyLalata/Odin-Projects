@@ -210,7 +210,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 90%;
+
 }
 .cont-proj-title {
     font-weight: bold;
@@ -225,6 +225,7 @@ button:hover {
     display: flex;
     gap: 30px;
     justify-content: flex-end;
+    margin: 10px
 }
 .proj-img {
     height: 23px;
