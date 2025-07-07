@@ -1,5 +1,7 @@
 :root {
     --sidebar-options: 18px;
+    height: 100vh;
+    width: 100vw;
 }
 html, body {
     height: 100vh;
@@ -17,7 +19,7 @@ html, body {
     display: grid;
     position: relative;
     background-color: rgb(0, 236, 252);
-    height: 100vh;
+    height: 140vh;
     width: 20vw;
     top: 0;
     left: 0;
@@ -107,7 +109,7 @@ html, body {
 .header {
     display: flex;
     height: 30vh;
-    background-color: lightgray;
+    background-color: lightslategrey;
 }
 .img.search {
     margin: auto;
@@ -194,22 +196,60 @@ button {
 .grid-projects {
     display: grid;
     height: 100vh;
-    margin: 40px 0 0 0;
+    margin: 0 0 0 0;
+    grid-template: 200px 200px / 300px 300px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 .announcements {
     display: grid;
     width: 35%;
-    height: 100vh;
 }
 .title-announcements {
     font-family: title;
     justify-self: center;
-    margin: 10px 0 0 0;
-    height: 5%;
+    height: fit-content;
     font-size: 32px;
 }
 .grid-announcements {
     display: grid;
-    height: 100vh;
-    margin: 40px 0 0 0;
+    grid-template: 100px 100px 100px / 300px;
+    grid-template-areas: 
+    "maintenance"
+    "community-share-day"
+    "updated-privacy-policy";
+    justify-content: center;
+}
+.mainte {
+    grid-area: maintenance;
+}
+.comm {
+    grid-area: community-share-day;
+}
+.policy {
+    grid-area: updated-privacy-policy;
+}
+.cont-announce {
+    font-size: 15px;
+}
+.cont-announce-child {
+    font-size: 12px;
+}
+.trending {
+    font-family: title;
+    justify-self: center;
+    height: 30px;
+    margin: 0;
+}
+.grid-trending {
+    display: grid;
+    grid-template: 100px 100px / 300px;
+    grid-template-areas: 
+    "person1"
+    "person2";
+    justify-content: center;
+    height: 100%;
+    margin: 10px 0 0 0;
 }
