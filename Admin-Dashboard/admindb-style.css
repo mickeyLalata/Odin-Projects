@@ -221,15 +221,12 @@ button {
     "community-share-day"
     "updated-privacy-policy";
     justify-content: center;
+    gap: 20px;
 }
-.mainte {
-    grid-area: maintenance;
-}
-.comm {
-    grid-area: community-share-day;
-}
-.policy {
-    grid-area: updated-privacy-policy;
+.info-ann {
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 .cont-announce {
     font-size: 15px;
@@ -241,15 +238,39 @@ button {
     font-family: title;
     justify-self: center;
     height: 30px;
-    margin: 0;
+    margin: 40px 0 0 0;
 }
 .grid-trending {
     display: grid;
-    grid-template: 100px 100px / 300px;
+    grid-template: 1fr 1fr 1fr/ 300px;
     grid-template-areas: 
     "person1"
-    "person2";
+    "person2"
+    "person3";
     justify-content: center;
     height: 100%;
     margin: 10px 0 0 0;
+    gap: 40px;
+}
+.trend {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.trend-img {
+    height: 50px;
+    width: 50px
+}
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+.username {
+    font-weight: bold;
+}
+.user-title {
+    font-size: 12px;
+    color: gray;
 }
