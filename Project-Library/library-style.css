@@ -1,0 +1,10 @@
+:root{
+    height: 100%;
+    width: 100%;
+}
+.header {
+    font-size: 42px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
