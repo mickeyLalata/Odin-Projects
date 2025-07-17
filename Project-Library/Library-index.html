@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Library</title>
     <link rel="stylesheet" href="library-style.css">
-    <script src="library-js.js"></script>
 </head>
 <body>
     <div class="header">
@@ -27,20 +26,14 @@
             <div class="inputs">
                 <label for="pages">Pages: <label>
                 <input type="number" class="pages" id="pages" name="pages" required>
-            </div>
-            <div class="inputs">
-                <label for="read">Read</label>
-                <input type="radio" class="read" id="read" name="read">
-            </div>
-            <div class="inputs">
-                <label for="not-read">Not Read</label>
-                <input type="radio" class="not-read" id="not-read" name="not-read">
-            </div>
-            <button onclick="closeForm()" id="close-form">Close</button>
+                </div>
+            <button onclick="CloseForm()" id="close-form">Close</button>
+            <button onclick="AddBookToLibrary()" id="add-book-to-library">Submit</button>
         </div>
     </div>
     <div>
-        <button onclick="addBook()" id="add-book">Add Book</button>
+        <button onclick="AddBook()" id="add-book">Add Book</button>
     </div>
+    <script src="library-js.js"></script>
 </body>
 </html>

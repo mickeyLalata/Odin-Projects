@@ -22,3 +22,12 @@
 .inputs {
     margin: 8px;
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.book-card {
+    border: 2px solid black;
+    width: 15%;
+}
